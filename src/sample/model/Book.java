@@ -16,7 +16,7 @@ public class Book {
     public Book(){
 
     }
-    public Book(String s1, String s2, Date value){
+    public Book(String s1, String s2){
         title=new SimpleStringProperty(s1);
         author=new SimpleStringProperty(s2);
 
@@ -32,10 +32,10 @@ public class Book {
         this.datum = datum;
     }
 
-    public Book(SimpleStringProperty title, SimpleStringProperty author, LocalDate datum) {
+    public Book(SimpleStringProperty title, SimpleStringProperty author) {
         this.title = title;
         this.author = author;
-        this.datum = datum;
+      //  this.datum = datum;
     }
 
     public String getTitle() {
